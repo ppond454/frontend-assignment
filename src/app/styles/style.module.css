@@ -1,0 +1,35 @@
+.card {
+  padding: 1rem;
+  border: 1px solid;
+  border-radius: 10px;
+  width: 100%;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+}
+.content {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  gap: 1rem;
+}
+
+.list-box {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid gray;
+  .list-box-header {
+    padding: 1rem;
+    background-color: gray;
+    color: white;
+    text-transform: uppercase;
+  }
+  .list-box-grid {
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    padding: 10px;
+  }
+}
