@@ -9,11 +9,9 @@ export async function GET() {
 }
 
 class groupData {
-
     constructor(url: string) {
         this.url = url
     }
-
     private url: string;
     async getData() {
         const rawData = await this.fetchData()
@@ -39,6 +37,7 @@ class groupData {
             addressUser: {}
         }
     }
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     private normalizeUserData(users: any[]): TNormalize {
         const normalizedData: TNormalize = {}
         for (const user of users) {

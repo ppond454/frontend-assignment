@@ -9,6 +9,7 @@ export enum Item {
 }
 
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export type TCallback = (...arg: any[]) => void
 
 export type TaskParams = [

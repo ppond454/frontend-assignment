@@ -1,11 +1,11 @@
-import { TItem } from '../types'
+import { TCallback, TItem } from '../types'
 import { CardButton } from './CardButton'
 import styles from '../styles/style.module.css'
 
 function List(props: {
   name: Set<TItem['name']>
   type: TItem['type']
-  onClickItem: (item: TItem) => void
+  onClickItem: TCallback
 }) {
   return (
     <div className={styles['list-box']}>
